@@ -8,6 +8,3 @@ def insertion_sort(A):
         A[i+1]=key
 
 
-A=[0,532,-32135,930,12.4]
-insertion_sort(A)
-print(A)
