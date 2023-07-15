@@ -31,6 +31,3 @@ def find_maximum_subarray(A,low,high):
             return right_low,right_high,right_sum
         else:
             return cross_low,cross_high,cross_sum
-
-A= [2, -1, 2, 3, -4, 1, -2, 1, 5, -3]
-print(find_maximum_subarray(A,0,len(A)-1))
