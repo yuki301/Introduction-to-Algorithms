@@ -1,0 +1,172 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{2.1-1
+以图2-2为模型，说明INSERTION-SORT在数组A=\textless31,41,59,26,41,58\textgreater 上的执行过程。}
+
+简要说明如下：
+
+31 41 59 26 41 58
+
+26 31 41 59 41 58
+
+26 31 41 41 59 58
+
+26 31 41 41 58 59
+
+\textbf{2.1-2
+重写过程INSERTION-SORT，使之按非升序（而不是非降序）排序。}
+
+将第五行中的A{[}i{]}\textgreater key改为A{[}i{]}\textless key。
+
+\textbf{2.1-3 考虑以下查找问题：}
+
+\textbf{输入：n个数的一个序列A=\textless{}\(a_1,a_2, ……,a_n\)\textgreater 和一个值v。}
+
+\textbf{输出：下标i使得v=A{[}i{]}或者当v不在A中出现时，v为特殊值NIL。}
+
+\textbf{写出线性查找的伪代码，它扫描整个序列来查找v。使用一个循环不变式来证明你的算法是正确的。确保你的循环不变式满足三条必要的性质。}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{LINEAR{-}SEARCH(A, v)}
+\NormalTok{    for i = 1 to A.length}
+\NormalTok{        if A[i] == v }
+\NormalTok{            return i}
+\NormalTok{    return "NIL"}
+\end{Highlighting}
+\end{Shaded}
+
+循环不变式：A{[}1\ldots\ldots i-1{]}。
+
+1.初始化：在循环开始前，因为未经过比较，可以确保循环不变式中没有等于v的元素；
+
+2.保持：当下标为i的元素和v相等时，算法结束，否则继续判断下一个元素，直到序列中没有元素为止。因此循环不变式中没有与v相等的元素。
+
+3.终止：由上述两点可以推出算法是正确的。
+
+\textbf{2.1-4
+考虑把两个n位二进制整数加起来的问题，这两个整数分别存储在两个n元数组A和B中。这两个整数的和应按二进制形式存储在一个（n+1）元数组C中。请给出该数组的形式化描述，并写出伪代码。}
+
+形式化描述：
+
+输入：两个n元数组A=\textless{}\(a_1, a_2, ..., a_n\)\textgreater 和B=\textless{}\(b_1, b_2, ..., b_n\)\textgreater，其中\(a_i\)和\(b_i\)表示二进制数的第i位。
+
+输出：一个（n+1）元数组C=\textless{}\(c_1, c_2, ..., c_{n+1}\)\textgreater，其中\(c_i\)表示二进制和的第i位。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{BINARY{-}ADDITION(A, B)}
+\NormalTok{    n = A.length}
+\NormalTok{    carry = 0}
+\NormalTok{    C = new array of size (n + 1)}
+    
+\NormalTok{    for i = n downto 1 }
+\NormalTok{        sum = A[i] + B[i] + carry}
+\NormalTok{        C[i+1] = sum \% 2}
+        
+\NormalTok{        if sum \textgreater{}= 2}
+\NormalTok{            carry = 1}
+\NormalTok{        else:}
+\NormalTok{            carry = 0}
+    
+\NormalTok{    C[1] = carry  }
+    
+\NormalTok{    return C}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
